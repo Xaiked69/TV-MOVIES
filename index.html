@@ -3,8 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi TV App Pro 3.1</title>
+    <title>Mi TV App Pro 3.2</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos básicos para TV */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            padding: 10px 20px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        #search-input {
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .category {
+            margin: 20px;
+        }
+
+        .category-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .movie-card {
+            min-width: 180px;
+            margin-right: 15px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .movie-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .movie-card .movie-title {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        .movie-card.focused {
+            border: 3px solid #f00;
+            border-radius: 8px;
+        }
+
+        /* Modal de reproducción */
+        #video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        #video-modal.hidden {
+            display: none;
+        }
+
+        .modal-content {
+            width: 80%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        #video-player {
+            width: 100%;
+            max-height: 600px;
+            border-radius: 10px;
+            background-color: #000;
+        }
+
+        #close-btn {
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #close-btn:focus {
+            outline: 2px solid #fff;
+        }
+
+        #modal-title {
+            font-size: 24px;
+            margin: 10px 0 5px 0;
+        }
+
+        #modal-year {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        #modal-synopsis {
+            font-size: 16px;
+        }
+
+        /* Ocultar scroll horizontal de la página */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,16 +148,11 @@
         <!-- Carruseles se cargan desde app.js -->
     </main>
 
-    <!-- Preview de video en miniatura -->
-    <div id="preview-container" class="hidden">
-        <video id="preview-player" muted autoplay></video>
-    </div>
-
     <!-- Modal de reproducción -->
     <div id="video-modal" class="hidden">
         <div class="modal-content">
             <button id="close-btn">Cerrar</button>
-            <video id="video-player" controls autoplay></video>
+            <video id="video-player" controls></video>
             <h2 id="modal-title"></h2>
             <p id="modal-year"></p>
             <p id="modal-synopsis"></p>
