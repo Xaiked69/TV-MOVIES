@@ -1,10 +1,13 @@
+/* --- BODY --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #111;
     color: #fff;
+    overflow-x: hidden;
 }
 
+/* --- HEADER --- */
 header {
     padding: 20px;
     background-color: #222;
@@ -12,6 +15,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
 }
 
 header input {
@@ -21,8 +32,10 @@ header input {
     font-size: 16px;
     border-radius: 5px;
     border: none;
+    outline: none;
 }
 
+/* --- CATEGORIES --- */
 .category {
     margin: 20px;
 }
@@ -32,6 +45,7 @@ header input {
     margin-bottom: 10px;
 }
 
+/* --- CAROUSEL --- */
 .carousel {
     display: flex;
     overflow-x: auto;
@@ -43,6 +57,7 @@ header input {
     display: none;
 }
 
+/* --- MOVIE CARD --- */
 .movie-card {
     min-width: 180px;
     cursor: pointer;
@@ -50,11 +65,18 @@ header input {
     transition: transform 0.3s, box-shadow 0.3s;
     flex-shrink: 0;
     border-radius: 8px;
+    outline: none;
 }
 
 .movie-card img {
     width: 100%;
     border-radius: 8px;
+}
+
+.movie-card .movie-title {
+    font-size: 16px;
+    margin-top: 8px;
+    text-align: center;
 }
 
 .movie-card.focused {
@@ -63,13 +85,8 @@ header input {
     box-shadow: 0 0 20px #f00;
 }
 
-.movie-title {
-    font-size: 16px;
-    margin-top: 8px;
-    text-align: center;
-}
-
-/* Preview de video */
+/* --- PREVIEW VIDEO (OPCIONAL) --- */
+/*
 #preview-container {
     position: fixed;
     bottom: 100px;
@@ -87,8 +104,9 @@ header input {
     height: 100%;
     object-fit: cover;
 }
+*/
 
-/* Modal */
+/* --- MODAL --- */
 .hidden {
     display: none;
 }
@@ -114,9 +132,12 @@ header input {
 
 #video-player {
     width: 100%;
+    max-height: 600px;
     border-radius: 8px;
+    background-color: #000;
 }
 
+/* --- CLOSE BUTTON --- */
 #close-btn {
     margin-bottom: 10px;
     padding: 8px 16px;
@@ -125,4 +146,9 @@ header input {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+}
+
+#close-btn:focus {
+    outline: 2px solid #fff;
 }
