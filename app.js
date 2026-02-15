@@ -3,23 +3,46 @@ const categories = [
     {
         name: "Proximanente",
         movies: [
-            { title: "Avatar: Fuego y Cenizas", year: "2025", synopsis: "de todo el mundo el 18 de diciembre de 2025. James Cameron lleva a las audiencias de regreso a Pandora en una nueva aventura inmersiva con el marine convertido en líder Na'vi Jake Sully (Sam Worthington), la guerrera Na'vi Neytiri (Zoe Saldaña) y la familia Sully..", thumbnail: "https://www.hugozapata.com.ar/wp-content/uploads/2025/12/avatar-fires-and-ash.jpg", videoUrl: "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771189058/ei/4d6RaYu_POvv1sQPv5OD4AU/ip/168.196.26.66/id/6dfdfc7ff248372c/itag/270/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgovp/clen%3D41490617%3Bdur%3D145.144%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1754010604633375/rqh/1/hls_chunk_host/rr2---sn-pn2bgv025g-x1xe.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/226/met/1771167457,/mh/2l/mm/31,29/mn/sn-pn2bgv025g-x1xe,sn-njaeyn7s/ms/au,rdu/mv/m/mvi/2/pl/24/rms/au,au/initcwndbps/1313750/bui/AW-iu_oJaNPLfpvSgNkToHa578Lh1XIH4oUyrjhdmo1tjncLPiFjow2Us_eMrf7FeL8ApGU0R9KwO2uf/spc/q5xjPMMG9ePKKuDk-SjWn_Q6x86rnJrPk6Dxiu6ibe_gq8v-URtuFv24qAUJrW_y/vprv/1/playlist_type/DVR/dover/13/txp/4535534/mt/1771166984/fvip/2/short_key/1/keepalive/yes/fexp/51552689,51565116,51565682,51580968,51772949/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgovp,rqh,xpc,bui,spc,vprv,playlist_type/sig/AJEij0EwRQIgKZRqGpUE2366Oca7wApy8tMWKYn5Nlj1rUQtcRLQtSECIQDojrfdMMN9PZEMehEwtjdnLCNd8KFzhcoHufCThO2HRw%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwQwIgH-bt54griwVODi0HrTK_Zx5UTjEjuMuvxxVeQANAfLYCHxwOXgO210tGEIGl1J8m99bbhg0eh8_MdN93gSBXgkE%3D/playlist/index.m3u8" },
-            { title: "Película 2", year: "2022", synopsis: "Sinopsis 2.", thumbnail: "https://via.placeholder.com/180x270.png?text=Película+2", videoUrl: "https://www.w3schools.com/html/movie.mp4" }
+            { 
+                title: "Avatar: Fuego y Cenizas", 
+                year: "2025", 
+                synopsis: "de todo el mundo el 18 de diciembre de 2025. James Cameron lleva a las audiencias de regreso a Pandora en una nueva aventura inmersiva con el marine convertido en líder Na'vi Jake Sully (Sam Worthington), la guerrera Na'vi Neytiri (Zoe Saldaña) y la familia Sully..", 
+                thumbnail: "https://www.hugozapata.com.ar/wp-content/uploads/2025/12/avatar-fires-and-ash.jpg", 
+                videoUrl: "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1771189058/ei/4d6RaYu_POvv1sQPv5OD4AU/ip/168.196.26.66/id/6dfdfc7ff248372c/itag/270/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgovp/clen%3D41490617%3Bdur%3D145.144%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1754010604633375/rqh/1/hls_chunk_host/rr2---sn-pn2bgv025g-x1xe.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/226/met/1771167457,/mh/2l/mm/31,29/mn/sn-pn2bgv025g-x1xe,sn-njaeyn7s/ms/au,rdu/mv/m/mvi/2/pl/24/rms/au,au/initcwndbps/1313750/bui/AW-iu_oJaNPLfpvSgNkToHa578Lh1XIH4oUyrjhdmo1tjncLPiFjow2Us_eMrf7FeL8ApGU0R9KwO2uf/spc/q5xjPMMG9ePKKuDk-SjWn_Q6x86rnJrPk6Dxiu6ibe_gq8v-URtuFv24qAUJrW_y/vprv/1/playlist_type/DVR/dover/13/txp/4535534/mt/1771166984/fvip/2/short_key/1/keepalive/yes/fexp/51552689,51565116,51565682,51580968,51772949/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgovp,rqh,xpc,bui,spc,vprv,playlist_type/sig/AJEij0EwRQIgKZRqGpUE2366Oca7wApy8tMWKYn5Nlj1rUQtcRLQtSECIQDojrfdMMN9PZEMehEwtjdnLCNd8KFzhcoHufCThO2HRw%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwQwIgH-bt54griwVODi0HrTK_Zx5UTjEjuMuvxxVeQANAfLYCHxwOXgO210tGEIGl1J8m99bbhg0eh8_MdN93gSBXgkE%3D/playlist/index.m3u8" 
+            },
+            { 
+                title: "Película 2", 
+                year: "2022", 
+                synopsis: "Sinopsis 2.", 
+                thumbnail: "https://via.placeholder.com/180x270.png?text=Película+2", 
+                videoUrl: "https://www.w3schools.com/html/movie.mp4" 
+            }
         ]
     },
     {
         name: "En el barro T2",
         movies: [
-            { title: "En el barro T2x1", year: "2026", synopsis: "Sinopsis 3.", thumbnail: "https://imgs.search.brave.com/LhDPfQ1fFryyNdlhwKyIblPMAPBFg_59Xk9qgzGm4f4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGF2YW5ndWFyZGlh/LmNvbS9wZWxpY3Vs/YXMtc2VyaWVzL2lt/YWdlcy9hbGwvc2Vy/aWUvcG9zdGVycy8y/MDI1Lzgvc2VyaWUt/MjU4NDYyL3cxMjgw/L2tqbkJVM0NqUVRZ/anV0Z0YyUDFRaFNX/dVZidS5qcGc", videoUrl: "https://cloud-s76-91-48-193.spcdn.cc/h75bj542dpe2alhulp3t47osa6dgjmvlult5hv7pztxkycm56qv5dluhpgua/v.mp4" },
-            { title: "En el barro T2x2", year: "2026", synopsis: "Sinopsis 4.", thumbnail: "https://imgs.search.brave.com/LhDPfQ1fFryyNdlhwKyIblPMAPBFg_59Xk9qgzGm4f4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGF2YW5ndWFyZGlh/LmNvbS9wZWxpY3Vs/YXMtc2VyaWVzL2lt/YWdlcy9hbGwvc2Vy/aWUvcG9zdGVycy8y/MDI1Lzgvc2VyaWUt/MjU4NDYyL3cxMjgw/L2tqbkJVM0NqUVRZ/anV0Z0YyUDFRaFNX/dVZidS5qcGc", videoUrl: "https://cloud-s76-91-48-193.spcdn.cc/h75bj642dpe2alhulp3t47wwcqiyjselt3h4txwr62ff3mcy3cuzekzpay6a/v.mp4" }
+            { 
+                title: "En el barro T2x1", 
+                year: "2026", 
+                synopsis: "Sinopsis 3.", 
+                thumbnail: "https://imgs.search.brave.com/LhDPfQ1fFryyNdlhwKyIblPMAPBFg_59Xk9qgzGm4f4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGF2YW5ndWFyZGlh/LmNvbS9wZWxpY3Vs/YXMtc2VyaWVzL2lt/YWdlcy9hbGwvc2Vy/aWUvcG9zdGVycy8y/MDI1Lzgvc2VyaWUt/MjU4NDYyL3cxMjgw/L2tqbkJVM0NqUVRZ/anV0Z0YyUDFRaFNX/dVZidS5qcGc", 
+                videoUrl: "https://cloud-s76-91-48-193.spcdn.cc/h75bj542dpe2alhulp3t47osa6dgjmvlult5hv7pztxkycm56qv5dluhpgua/v.mp4" 
+            },
+            { 
+                title: "En el barro T2x2", 
+                year: "2026", 
+                synopsis: "Sinopsis 4.", 
+                thumbnail: "https://imgs.search.brave.com/LhDPfQ1fFryyNdlhwKyIblPMAPBFg_59Xk9qgzGm4f4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bGF2YW5ndWFyZGlh/LmNvbS9wZWxpY3Vs/YXMtc2VyaWVzL2lt/YWdlcy9hbGwvc2Vy/aWUvcG9zdGVycy8y/MDI1Lzgvc2VyaWUt/MjU4NDYyL3cxMjgw/L2tqbkJVM0NqUVRZ/anV0Z0YyUDFRaFNX/dVZidS5qcGc", 
+                videoUrl: "https://cloud-s76-91-48-193.spcdn.cc/h75bj642dpe2alhulp3t47wwcqiyjselt3h4txwr62ff3mcy3cuzekzpay6a/v.mp4" 
+            }
         ]
     }
 ];
 
+// Elementos del DOM
 const categoriesContainer = document.getElementById("categories-container");
 const searchInput = document.getElementById("search-input");
-const previewContainer = document.getElementById("preview-container");
-const previewPlayer = document.getElementById("preview-player");
 const modal = document.getElementById("video-modal");
 const videoPlayer = document.getElementById("video-player");
 const modalTitle = document.getElementById("modal-title");
@@ -51,11 +74,8 @@ function createCategory(category, catIndex) {
         card.dataset.movieIndex = movieIndex;
         card.innerHTML = `<img src="${movie.thumbnail}" alt="${movie.title}"><div class="movie-title">${movie.title}</div>`;
 
-        // Abrir modal
+        // Solo abrir modal al hacer click o presionar Enter, no mini-preview
         card.addEventListener("click", () => openModal(movie));
-        // Mini preview
-        card.addEventListener("focus", () => showPreview(movie));
-        card.addEventListener("blur", hidePreview);
 
         carousel.appendChild(card);
     });
@@ -81,19 +101,6 @@ function closeModal() {
 }
 
 closeBtn.addEventListener("click", closeModal);
-
-// Mini preview
-function showPreview(movie) {
-    if(!movie.videoUrl) return;
-    previewContainer.classList.remove("hidden");
-    previewPlayer.src = movie.videoUrl;
-}
-
-function hidePreview() {
-    previewPlayer.pause();
-    previewPlayer.src = "";
-    previewContainer.classList.add("hidden");
-}
 
 // Navegación con control remoto
 function updateFocus() {
